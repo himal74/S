@@ -1,197 +1,46 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #111;
-    color: #fff;
-}
-
-/* Home Page Styling */
-#home-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1a1a1a;
-    animation: fadeIn 2s ease-in-out;
-}
-
-#home-content {
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-.animated-heading {
-    font-size: 3rem;
-    color: #ff7f00;
-    animation: slideIn 2s ease-out;
-}
-
-.intro-text {
-    font-size: 1.5rem;
-    margin: 20px;
-    color: #ddd;
-}
-
-.btn-enter {
-    font-size: 1.5rem;
-    padding: 15px 30px;
-    background-color: #ff7f00;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.btn-enter:hover {
-    background-color: #e67e22;
-    transform: scale(1.1);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes slideIn {
-    0% { transform: translateY(50px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-}
-
-/* Main Social App Section */
-#social-app {
-    display: none;
-}
-
-.hidden {
-    display: none;
-}
-
-.sticky-nav {
-    position: sticky;
-    top: 0;
-    background-color: #222;
-    padding: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.sticky-nav ul {
-    list-style: none;
+.cube {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 
-.sticky-nav ul li {
-    margin: 0 15px;
+.face {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
 }
 
-.sticky-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+.row {
+    display: flex;
 }
 
-.sticky-nav ul li a:hover {
-    color: #ff7f00;
-}
-
-/* Project List Styling */
-.project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 30px;
-}
-
-.project-item {
-    background: #333;
-    padding: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-item:hover {
-    transform: scale(1.05);
-}
-
-.project-item h3 {
-    margin-top: 15px;
-    text-align: center;
-    color: #ff7f00;
-    font-size: 1.2rem;
-}
-
-/* Button to open the project */
-.open-project {
-    width: 100%;
-    padding: 10px;
-    background-color: #ff7f00;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+.block {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    background-color: lightgray;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.open-project:hover {
-    background-color: #e67e22;
-}
+.white { background-color: white; }
+.green { background-color: green; }
+.orange { background-color: orange; }
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.blue { background-color: blue; }
 
-/* Back Button Styling */
-#back-section {
-    display: none;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-}
-
-.back-btn {
+button {
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #ff7f00;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
-
-.back-btn:hover {
-    background-color: #e67e22;
-}
-
-/* Footer Styling */
-.sticky-footer {
-    position: sticky;
-    bottom: 0;
-    background-color: #1a1a1a;
-    text-align: center;
-    padding: 15px;
-    color: #fff;
-}
-
-.social-icons {
-    margin: 10px 0;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #ff7f00;
-          }
