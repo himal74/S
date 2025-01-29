@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Denish's Projects - Advanced Social App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <!-- Home Page with Animated Effects -->
+    <div id="home-page">
+        <div id="home-content">
+            <h1 class="animated-heading">Welcome to Denish's World of Projects!</h1>
+            <p class="intro-text">Explore my creative web development projects with amazing effects!</p>
+            <button id="enter-btn" class="btn-enter">Enter</button>
+        </div>
+    </div>
+
+    <!-- Main Social App Section -->
+    <div id="social-app" class="hidden">
+        <header>
+            <h1 id="title">Denish's Projects</h1>
+            <nav class="sticky-nav">
+                <ul>
+                    <li><a href="#yourname">Your Name</a></li>
+                    <li><a href="#solo-leveling">Solo Leveling</a></li>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#portfolio">Portfolio X3</a></li>
+                    <li><a href="#flappy-bird">Flappy Bird</a></li>
+                    <li><a href="#clock">Clock</a></li>
+                    <li><a href="#x-o">X-O Game</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item" id="yourname">
+                    <h3>Your Name</h3>
+                    <button class="open-project" onclick="openProject('https://ryukazi.github.io/Yourname/')">Open Project</button>
+                </div>
+
+                <div class="project-item" id="solo-leveling">
+                    <h3>Solo Leveling</h3>
+                    <button class="open-project" onclick="openProject('https://ryukazi.github.io/Solo-leveling-reawakening-/')">Open Project</button>
+                </div>
+
+                <div class="project-item" id="calculator">
+                    <h3>Calculator</h3>
+                    <button class="open-project" onclick="openProject('https://ryukazi.github.io/Calculator-/')">Open Project</button>
+                </div>
+
+                <div class="project-item" id="portfolio">
+                    <h3>Portfolio X3</h3>
+                    <button class="open-project" onclick="openProject('https://ryukazi.github.io/portfolio.X3/')">Open Project</button>
+                </div>
+
+                <div class="project-item" id="flappy-bird">
+                    <h3>Flappy Bird</h3>
+                    <button class="open-project" onclick="openProject('https://ryukazi.github.io/Flappy-bird-/')">Open Project</button>
+                </div>
+
+                <div class="project-item" id="clock">
+                    <h3>Clock</h3>
+                    <button class="open-project" onclick="openProject('https://ryukazi.github.io/Clock/')">Open Project</button>
+                </div>
+
+                <div class="project-item" id="x-o">
+                    <h3>X-O Game</h3>
+                    <button class="open-project" onclick="openProject('https://ryukazi.github.io/X-O/')">Open Project</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer with Social Icons -->
+        <footer class="sticky-footer">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">🔗</a>
+                <a href="https://www.github.com" target="_blank" class="social-icon github">🐙</a>
+            </div>
+            <p>© 2025 Denish's Projects</p>
+        </footer>
+    </div>
+
+    <!-- Back Button Section -->
+    <div id="back-section" class="hidden">
+        <button id="back-btn" class="back-btn">Back to Projects</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+    </html>
